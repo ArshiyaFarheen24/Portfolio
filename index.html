@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arshiya Farheen Khanbu - MERN Stack Developer</title>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600&family=Fira+Code:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="logo.png" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <span>Arshiya Farheen</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About Me</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-left">
+            <div class="profile-image">
+              <img src="images/profile.jpeg" alt="Arshiya Farheen Khanbu" />
+              <br />
+              <div class="profile-ring"></div>
+            </div>
+            <div class="hero-text">
+              <h1 class="hero-name">Arshiya Farheen Khanbu</h1>
+              <h2 class="hero-title">MERN Stack Developer | Java Enthusiast</h2>
+              <p class="hero-tagline">
+                Crafting innovative web solutions with modern technologies and
+                clean, efficient code.
+              </p>
+              <button class="cta-button" onclick="scrollToSection('projects')">
+                <span>View My Work</span>
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="hero-right">
+            <div class="hero-animation">
+              <div class="floating-elements">
+                <div class="floating-element" style="--delay: 0s">
+                  <i class="fab fa-react"></i>
+                </div>
+                <div class="floating-element" style="--delay: 1s">
+                  <i class="fab fa-node-js"></i>
+                </div>
+                <div class="floating-element" style="--delay: 2s">
+                  <i class="fab fa-js-square"></i>
+                </div>
+                <div class="floating-element" style="--delay: 0.5s">
+                  <i class="fab fa-java"></i>
+                </div>
+                <div class="floating-element" style="--delay: 1.5s">
+                  <i class="fas fa-database"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll">
+        <div class="scroll-indicator">
+          <span>Scroll Down</span>
+          <div class="scroll-arrow"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="about-content glass-panel">
+          <div class="about-text">
+            <p class="about-description">
+              I’m a passionate MERN Stack Developer who loves building
+              innovative and impactful web applications by blending creativity
+              with cutting-edge technology. My journey in tech has been fueled
+              by a constant drive to learn, create, and solve real-world
+              problems.
+            </p>
+            <p class="about-description">
+              I’m proud to be a Hackathon Winner, a selected contributor for
+              GirlScript Summer of Code, and the winner of a competitive
+              presentation challenge. I am also an enthusiast of Data Structures
+              with Java, which strengthens my problem-solving skills and helps
+              me write efficient, optimized code.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Skills</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fab fa-html5"></i>
+            </div>
+            <span class="skill-name">HTML5</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fab fa-css3-alt"></i>
+            </div>
+            <span class="skill-name">CSS3</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fab fa-js-square"></i>
+            </div>
+            <span class="skill-name">JavaScript</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fab fa-react"></i>
+            </div>
+            <span class="skill-name">React</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fab fa-node-js"></i>
+            </div>
+            <span class="skill-name">Node.js</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fas fa-server"></i>
+            </div>
+            <span class="skill-name">Express</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <span class="skill-name">MongoDB</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fab fa-java"></i>
+            </div>
+            <span class="skill-name">Java (OOPs)</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fab fa-git-alt"></i>
+            </div>
+            <span class="skill-name">Git/GitHub</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fas fa-wind"></i>
+            </div>
+            <span class="skill-name">Tailwind CSS</span>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <span class="skill-name">REST APIs</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Projects</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="projects-grid">
+          <!-- Netflix Clone -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="https://images.pexels.com/photos/4348401/pexels-photo-4348401.jpeg?auto=compress&cs=tinysrgb&w=400"
+                alt="Netflix Clone"
+              />
+              <div class="project-overlay">
+                <div class="project-tech">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Netflix Clone</h3>
+              <p class="project-description">
+                A responsive Netflix homepage clone built with HTML and CSS,
+                featuring modern design and smooth animations.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/ArshiyaFarheen24/Netflix-clone" target="_blank" class="project-link">
+                  <i class="fab fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ramzan Greeting Card -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="https://images.pexels.com/photos/6032877/pexels-photo-6032877.jpeg?auto=compress&cs=tinysrgb&w=400"
+                alt="Greeting Card"
+              />
+              <div class="project-overlay">
+                <div class="project-tech">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Ramzan Greeting Card</h3>
+              <p class="project-description">
+                An interactive greeting card with beautiful animations and
+                Islamic design elements.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/ArshiyaFarheen24/Ramzan-card" target="_blank" class="project-link">
+                  <i class="fab fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chat Website -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="quora.png"
+                alt="Chat Website"
+              />
+              <div class="project-overlay">
+                <div class="project-tech">
+                  <span>Node.js</span>
+                  <span>Express</span>
+                  <span>MongoDB</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Chat Website</h3>
+              <p class="project-description">
+                Real-time chat application with user authentication and message
+                history using Socket.io.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/ArshiyaFarheen24/Chat-website" target="_blank" class="project-link">
+                  <i class="fab fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- TODO App -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="https://images.pexels.com/photos/6980579/pexels-photo-6980579.jpeg?auto=compress&cs=tinysrgb&w=400"
+                alt="TODO App"
+              />
+              <div class="project-overlay">
+                <div class="project-tech">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">TODO App</h3>
+              <p class="project-description">
+                A modern task management application with local storage and
+                intuitive drag-and-drop functionality.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/ArshiyaFarheen24/TODO-App" target="_blank" class="project-link">
+                  <i class="fab fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- REST API -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="https://images.pexels.com/photos/11035380/pexels-photo-11035380.jpeg?auto=compress&cs=tinysrgb&w=400"
+                alt="REST API"
+              />
+              <div class="project-overlay">
+                <div class="project-tech">
+                  <span>Node.js</span>
+                  <span>Express</span>
+                  <span>MongoDB</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">REST API</h3>
+              <p class="project-description">
+                Complete RESTful API with CRUD operations, authentication, and
+                comprehensive error handling.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/ArshiyaFarheen24/Rest-API" target="_blank" class="project-link">
+                  <i class="fab fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Node with SQL -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="https://images.pexels.com/photos/8849295/pexels-photo-8849295.jpeg?auto=compress&cs=tinysrgb&w=400"
+                alt="Node with SQL"
+              />
+              <div class="project-overlay">
+                <div class="project-tech">
+                  <span>Node.js</span>
+                  <span>Express</span>
+                  <span>MySQL</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Node with SQL</h3>
+              <p class="project-description">
+                Backend application demonstrating SQL database integration with
+                Node.js and Express.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/ArshiyaFarheen24/Node-with-SQL" target="_blank" class="project-link">
+                  <i class="fab fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- D-Connect -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400"
+                alt="D-Connect"
+              />
+              <div class="project-overlay">
+                <div class="project-tech">
+                  <span>React</span>
+                  <span>Material-UI</span>
+                  <span>Node.js</span>
+                  <span>MongoDB</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">D-Connect</h3>
+              <p class="project-description">
+                Full-stack social platform with real-time features, JWT
+                authentication, and smooth animations using Framer Motion.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/Digital-Dreamers-07/D-Connect" target="_blank" class="project-link">
+                  <i class="fab fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Agrio -->
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="https://images.pexels.com/photos/4503273/pexels-photo-4503273.jpeg?auto=compress&cs=tinysrgb&w=400"
+                alt="Agrio"
+              />
+              <div class="project-overlay">
+                <div class="project-tech">
+                  <span>Java</span>
+                  <span>Android</span>
+                  <span>Firebase</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Agrio</h3>
+              <p class="project-description">
+                Android agriculture application built with Java, featuring
+                Firebase integration for data management.
+              </p>
+              <div class="project-links">
+                <a href="https://github.com/Digital-Dreamers-07/Agrio" target="_blank" class="project-link">
+                  <i class="fab fa-github"></i>
+                  <span>GitHub</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Education</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="education-timeline">
+          <div class="education-item glass-panel">
+            <div class="education-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="education-content">
+              <div class="education-degree">B.Tech</div>
+              <div class="education-school">
+                ST. JOHNS COLLEGE OF ENGINEERING & TECHNOLOGY, Yemiganur
+              </div>
+              <div class="education-period">2022 – 2026</div>
+              <div class="education-grade">CGPA: 9.3</div>
+            </div>
+          </div>
+          <div class="education-item glass-panel">
+            <div class="education-icon">
+              <i class="fas fa-school"></i>
+            </div>
+            <div class="education-content">
+              <div class="education-degree">Intermediate (MPC)</div>
+              <div class="education-school">Narayana Jr. College, Adoni</div>
+              <div class="education-period">2020 – 2022</div>
+              <div class="education-grade">GPA: 9.8</div>
+            </div>
+          </div>
+          <div class="education-item glass-panel">
+            <div class="education-icon">
+              <i class="fas fa-book"></i>
+            </div>
+            <div class="education-content">
+              <div class="education-degree">SSC</div>
+              <div class="education-school">
+                BHASHYAM HIGH SCHOOL, Adoni, Kurnool
+              </div>
+              <div class="education-period">2020</div>
+              <div class="education-grade">GPA: 10</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Certifications</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="certifications-grid">
+          <div class="cert-card glass-panel">
+            <div class="cert-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3 class="cert-title">Oracle Database Certified</h3>
+          </div>
+          <div class="cert-card glass-panel">
+            <div class="cert-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3 class="cert-title">C Programming Certified</h3>
+          </div>
+          <div class="cert-card glass-panel">
+            <div class="cert-icon">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <h3 class="cert-title">Hackathon Winner</h3>
+          </div>
+          <div class="cert-card glass-panel">
+            <div class="cert-icon">
+              <i class="fas fa-presentation"></i>
+            </div>
+            <h3 class="cert-title">Paper Presentation Certified</h3>
+          </div>
+          <div class="cert-card glass-panel">
+            <div class="cert-icon">
+              <i class="fas fa-satellite"></i>
+            </div>
+            <h3 class="cert-title">ISRO — Remote Sensing Digital Analysis</h3>
+          </div>
+          <div class="cert-card glass-panel">
+            <div class="cert-icon">
+              <i class="fas fa-cog"></i>
+            </div>
+            <h3 class="cert-title">Deloitte — Technology Certification</h3>
+          </div>
+          <div class="cert-card glass-panel">
+            <div class="cert-icon">
+              <i class="fas fa-code-branch"></i>
+            </div>
+            <h3 class="cert-title">Scaler — Hackathon Certification</h3>
+          </div>
+          <div class="cert-card glass-panel">
+            <div class="cert-icon">
+              <i class="fab fa-react"></i>
+            </div>
+            <h3 class="cert-title">MERN Stack Development Certified</h3>
+          </div>
+          <div class="cert-card glass-panel">
+            <div class="cert-icon">
+              <i class="fab fa-java"></i>
+            </div>
+            <h3 class="cert-title">DSA in Java Certified</h3>
+          </div>
+          <div class="cert-card glass-panel">
+            <div class="cert-icon">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <h3 class="cert-title">
+              Skill Dzire Internship — Full Stack Development
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Contact Me</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3 class="contact-subtitle">Get In Touch</h3>
+            <p class="contact-description">
+              I'm always open to discussing new opportunities and interesting
+              projects. Feel free to reach out if you'd like to connect!
+            </p>
+            <div class="contact-links">
+              <a
+                href="mailto:khanbuarshiyafarheen@gmail.com"
+                class="contact-link"
+                target="_blank"
+              >
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <span>khanbuarshiyafarheen@gmail.com</span>
+              </a>
+              <a href="tel:9100437497" class="contact-link" target="_blank">
+                <div class="contact-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <span>9100437497</span>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/arshiya-farheen-khanbu-a4556a331/"
+                class="contact-link"
+                target="_blank"
+              >
+                <div class="contact-icon">
+                  <i class="fab fa-linkedin"></i>
+                </div>
+                <span>LinkedIn Profile</span>
+              </a>
+              <a
+                href="https://github.com/ArshiyaFarheen24"
+                class="contact-link"
+                target="_blank"
+              >
+                <div class="contact-icon">
+                  <i class="fab fa-github"></i>
+                </div>
+                <span>GitHub Profile</span>
+              </a>
+            </div>
+          </div>
+          <div class="contact-form-container">
+            <form class="contact-form glass-panel" id="contactForm">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="submit-btn">
+                <span>Send Message</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+            <div id="formMessage" class="form-message"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-text">
+            <p>&copy; 2024 Arshiya Farheen Khanbu. All rights reserved.</p>
+          </div>
+          <div class="footer-social">
+            <a
+              href="https://www.linkedin.com/in/arshiya-farheen-khanbu-a4556a331/"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/ArshiyaFarheen24" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:khanbuarshiyafarheen@gmail.com" target="_blank">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
