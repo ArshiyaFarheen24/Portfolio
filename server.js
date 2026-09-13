@@ -1,4 +1,5 @@
 require('dotenv').config();
+
 const express = require('express');
 const nodemailer = require('nodemailer');
 const cors = require('cors');
@@ -22,17 +23,14 @@ app.post('/contact', async (req, res) => {
   const { name, email, message } = req.body;
 
   try {
-    // Create transporter (you'll need to configure this with actual email credentials)
-   const transporter = nodemailer.createTransport({
-
+    const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
-        user: process.env.EMAIL_USER,// Replace with actual email
-        pass: process.env.EMAIL_PASS // Replace with actual email// Replace with actual email// Replace with actual email
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS
       }
     });
 
-    // Email options
     const mailOptions = {
       from: email,
       to: 'khanbuarshiyafarheen@gmail.com',
@@ -46,16 +44,29 @@ app.post('/contact', async (req, res) => {
       `
     };
 
-    // Send email
     await transporter.sendMail(mailOptions);
-    
-    res.json({ success: true, message: 'Message sent successfully!' });
+
+    res.json({
+      success: true,
+      message: 'Message sent successfully!'
+    });
+
   } catch (error) {
     console.error('Email error:', error);
-    res.status(500).json({ success: false, message: 'Failed to send message. Please try again.' });
+
+    res.status(500).json({
+      success: false,
+      message: 'Failed to send message. Please try again.'
+    });
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
-});
+// Start server locally
+if (process.env.NODE_ENV !== 'production') {
+  app.listen(PORT, () => {
+    console.log(`Server running on http://localhost:${PORT}`);
+  });
+}
+
+// Export Express app for Vercel
+module.exports = app;
